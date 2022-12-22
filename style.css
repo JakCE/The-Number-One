@@ -55,9 +55,99 @@
     display: flex;
     align-content: center;
     vertical-align: center;
-    margin: 0px -9px 0px -9px;
+    margin: 0px -8px 0px -9px;
 }
 .video-intro video{
     width: 100%;
+    height: auto;
+}
+/*SECCION INICIO*/
+.seccion-inicio{
+    margin: 0px 10% 0px 10%;
+    padding: 10px 0px 10px 0px;
+}
+.inicio-head{
+    color: rgb(70, 70, 71);
+    padding-bottom: 40px;
+}
+.inicio-cards{
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.card{
+    width: 280px;
+    height: 400px;
+    text-align: center;
+    border: 2px solid rgb(70, 70, 71);
+}
+.card img{
+    width: 100px;
+    height: auto;
+}
+.card:hover{
+    border: 2.5px solid #25bfee;
+    transition: all 0.4s;
+    background-color: #dcf7ff;
+    border-radius: 10px;
+}
+.contenido-card{
+    padding: 90px 0px 20px 0px;
+}
+.check{
+    width: 15px;
+    height: 15px;
+    margin: 0px 49% 0px 49%;
+    border: 2px solid black;
+    transform: rotate(45deg);
+    color: #fff;
+    visibility: visible;
+}
+.check:hover{
+    visibility: visible;
+    transform: rotate(0deg);
+    background-color: #25bfee;
+    border: 2px solid #25bfee;
+    color: #25bfee;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/*SECCION spikes*/
+.spikes {
+    position: relative;
+    background: #2593ee;
+    height: 17vh;
+    margin: 50px -8px 50px -9px;
+}
+  
+  .spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 40px;
+    background-size: 40px 100%;
+    background-image: linear-gradient(135deg, #2593ee 25%, transparent 25%), linear-gradient(225deg, #2593ee 25%, transparent 25%);
+    background-position: 0 0;
+  }
+.spikes h2{
+    color: #fff;
+    text-align: center;
+}
+/*SECCION VIDEO*/
+.video-home {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 120px 0px 120px 0px;
+    justify-content: center;
+}
+.video-home video{
+    width: 400px;
     height: auto;
 }
