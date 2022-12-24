@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;700&display=swap');
 *{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+    margin: 0px;
 }
 .nav-tno{
     width: 100%;
@@ -11,6 +12,9 @@
     background-color: #fff;
     background-origin: content-box;
     /*border-bottom: 1px solid #d6d8da;*/
+}
+.icon-menu{
+    display: none;
 }
 .logo-tno img{
     width: 100%;
@@ -34,13 +38,21 @@
 .nav-tno ul li a{
     text-decoration: none;
     color: black;
+    padding: 10px;
+    border-radius: 10px;
 }
 .nav-tno ul li a strong{
     color: #25bfee;
 }
+.nav-tno ul li a strong:hover{
+    color: #fff;
+}
 .nav-tno ul li a:hover{
-    color: #25bfee;
-    transition: 0.4s ease;
+    background-color: #25bfee;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff;
+    transition: 0.2s ease;
     text-shadow: 1px 1px 2px #25bfee;
 }
 /*BANNER*/
@@ -55,7 +67,6 @@
     display: flex;
     align-content: center;
     vertical-align: center;
-    margin: 0px -8px 0px -9px;
 }
 .video-intro video{
     width: 100%;
@@ -117,9 +128,9 @@
 /*SECCION spikes*/
 .spikes {
     position: relative;
-    background: #2593ee;
+    background: #7dddf7;
     height: 140px;
-    margin: 50px -8px 50px -9px;
+    margin: 50px 0px 50px 0px;
 }
   
   .spikes::after {
@@ -132,7 +143,7 @@
     display: block;
     height: 40px;
     background-size: 40px 100%;
-    background-image: linear-gradient(135deg, #2593ee 25%, transparent 25%), linear-gradient(225deg, #2593ee 25%, transparent 25%);
+    background-image: linear-gradient(135deg, #7dddf7 25%, transparent 25%), linear-gradient(225deg, #7dddf7 25%, transparent 25%);
     background-position: 0 0;
   }
 .spikes h2{
@@ -150,4 +161,105 @@
 .video-home video{
     width: 400px;
     height: auto;
+}
+
+/*FOOTER */
+.end-page{
+    background-color: #696969;
+    color: rgb(212, 212, 212);
+    height: auto;
+    width: 100%;
+    padding: 20px 0px;
+}
+.copy-end{
+    width: 100%;
+    background-color: transparent;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+.links-start{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.links-start ul{
+    display: inline-flex;
+    list-style: none;
+}
+.list-links ul{
+    margin: 15px 0px 0px 15px;
+}
+.list-links ul li::after{
+    padding-left: 5px;
+    padding-right: 5px;
+    content: "|";
+}
+.list-links ul li:last-child::after{
+    content: " ";
+}
+.links-start ul li a{
+    text-decoration: none;
+    color: rgb(212, 212, 212);
+}
+.links-start ul li a:hover{
+    color: #fff;
+}
+.follow-content img{
+    width: 30px;
+    height: 30px;
+}
+.follow-content ul{
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+.follow-content ul li::after{
+    content: "";
+    padding-right: 20px;
+}
+
+@media screen and (max-width:480px) {
+    .nav-tno ul{
+        display: none;
+    }
+    /*.nav-links ul{
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-tno ul li a{
+        text-align: center;
+    }
+    .nav-tno{
+        display: flex;
+        align-items: center;
+    }*/
+    .logo-tno img{
+        width: 80px;
+        height: auto;
+        margin: 10px;
+    }
+    .icon-menu{
+        display: flex;
+        margin: 0px;
+        width: 25px;
+        height: auto;
+        margin-right: 20px;
+        padding: 3px;
+        border: 1px solid #7dddf7;
+    }
 }
